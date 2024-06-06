@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #ffffff;
+    color:#555;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/pexels-pixabay-262978.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+.hero-text-box{
+  position: absolute;  
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero-text-box h1{
+    color: white;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.btn,input[type=submit]{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+}
+.btn-full,input[type=submit]{
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    margin-right: 25px;
+}
+.btn-ghost{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a{
+    text-decoration: none;
+   color: white;
+   font-size: 90%;
+   text-transform: uppercase;
+   padding: 5px 0px;
+   transition: border-bottom 0.2s;
+}
+.main-nav li a:hover{
+    border-bottom: 3px solid red;
+}
+.section-feature{
+    margin-top: 10px;
+}
+.cards{
+    display: flex;
+   
+}
+.card{
+    margin: 10px;
+}
+section{
+    padding: 80px 0;
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 180%;
+    margin-bottom: 30px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box{
+    padding: 1%;
+
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: orange;
+    margin: 15px 0;
+   
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    transition: transfrom 0.5s,opacity 0.5s;
+}
+.meal-photo img{
+    width: 100%;
+   
+    transform: scale(1.15);
+    opacity: 0.7;
+
+}
+.section-meals{
+    padding: 0;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;   
+}
+.section-steps{
+   margin: 50px ;
+}
+.works-step{
+    margin-bottom : 50px;
+}
+.steps-box{
+    display: flex;
+   
+}
+.container{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: block;
+    font-size: 110%;
+}
+.numb{
+   font-weight: 300;
+   margin-right: 10px;
+}
+.gap{
+    margin-bottom: 30px;
+}
+.btn-app img{
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+
+}
+.app-store{
+    display: flex;
+    margin-top: 40px;
+}
+.clearfix {zoom:1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.rows{
+    display: flex;
+}
+.adjust{
+    height: 300px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: orange;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.city-feature a{
+    text-decoration: none;
+    color: orange;
+    border-bottom: 1px solid orange;
+    padding-bottom: 2px;
+}
+.city-feature a:hover{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+.section-testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/resources/css/img/meals.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    width: 45px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.section-plans{
+    background-color: #f4f4f4;
+}
+.plan-box{
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: orange;
+}
+.plan-price-meal{
+    font-size: 80%;   
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.span_1_of_3 {
+	width: 32.26%; 
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box li{
+    padding: 5px 0;
+}
+.section-form{
+  width: 60%;
+  margin: 0 auto;
+}
+.section-form div{
+    padding: 5px;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    width: 100%;
+}
+footer{
+background-color: #333;
+font-size: 80%;
+padding: 50px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style-type: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.footer-nav li a:link,
+.footer-nav li:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.social-links li:hover{
+    color: #ddd;
+    
+}
+footer p{
+   color: white; 
+   text-align: center;
+   font-size: 90%;
+   margin-top: 40px;
+}
+.social-links li:hover{
+    font-size: 160%;
+}
+/* small phone from 0 to 480px */
+@media only screen and (max-width:480px){
+
+}
+
+/* for small phones to tablets from 481 to 767px */
+@media only screen and (max-width:767px){
+
+}
+
+/* for small tablets to big tablets 768 to 1023px */
+@media only screen and (max-width:1023px){
+    .hero-text-box{
+        position: absolute;  
+        width: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+
+/* for big tablets to deskotop */
+@media only screen and (max-width:1200px)
+{
+    .hero-text-box{
+        width: 1000px;
+        transform: translate(-50%,-50%);
+      }
+}
